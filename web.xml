@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>    
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>select</servlet-name>
+  <servlet-class>Servlet.SelectDepartmentServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>select</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Login</servlet-name>
+  <servlet-class>Servlet.LoginServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>Login</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ReportCard</servlet-name>
+  <servlet-class>Servlet.ReportCardServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>ReportCard</servlet-name>
+  <url-pattern>/student/report</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Compare</servlet-name>
+  <servlet-class>Servlet.CompareTwoStudentsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>Compare</servlet-name>
+  <url-pattern>/student/compare</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>StudentsList</servlet-name>
+  <servlet-class>Servlet.GetStudentsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>StudentsList</servlet-name>
+  <url-pattern>/login/students</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>StaffsList</servlet-name>
+  <servlet-class>Servlet.GetStaffsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>StaffsList</servlet-name>
+  <url-pattern>/login/staffs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Rank</servlet-name>
+  <servlet-class>Servlet.RankServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>Rank</servlet-name>
+  <url-pattern>/login/rank</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>  
+  <servlet-name>SubjectAverage</servlet-name>
+  <servlet-class>Servlet.SubjectAverageServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>SubjectAverage</servlet-name>
+  <url-pattern>/login/subject/average</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AboveSubjectAverage</servlet-name>
+  <servlet-class>Servlet.markAboveSubjectAverageServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AboveSubjectAverage</servlet-name>
+  <url-pattern>/login/subject/mark/aboveAverage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>topScorer</servlet-name>
+  <servlet-class>Servlet.TopScorerServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>topScorer</servlet-name>
+  <url-pattern>/login/subject/mark/topScorer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>academicDetails</servlet-name>
+  <servlet-class>Servlet.AcademicDetailsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>academicDetails</servlet-name>
+  <url-pattern>/login/subject/mark/academicDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AboveSubjectAverageCount</servlet-name>
+  <servlet-class>Servlet.SubjectsAboveAverageAndCountServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AboveSubjectAverageCount</servlet-name>
+  <url-pattern>/login/subject/mark/AboveAverage/subjectCount</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Logout</servlet-name>
+  <servlet-class>Servlet.LogoutServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>Logout</servlet-name>
+  <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>StudentForm</servlet-name>
+  <servlet-class>Servlet.StudentFormServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>StudentForm</servlet-name>
+  <url-pattern>/login/student/form</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>StaffForm</servlet-name>
+  <servlet-class>Servlet.StaffFormServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>StaffForm</servlet-name>
+  <url-pattern>/login/staff/form</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>AddStudent</servlet-name>
+  <servlet-class>Servlet.AddStudentServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AddStudent</servlet-name>
+  <url-pattern>/login/student/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddStaff</servlet-name>
+  <servlet-class>Servlet.AddStaffServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AddStaff</servlet-name>
+  <url-pattern>/login/staff/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateStudentMark</servlet-name>
+  <servlet-class>Servlet.UpdateStudentMarkServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>UpdateStudentMark</servlet-name>
+  <url-pattern>/login/staff/update/mark</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+  <servlet-name>RemoveStudent</servlet-name>
+  <servlet-class>Servlet.RemoveStudentServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>RemoveStudent</servlet-name>
+  <url-pattern>/login/staff/remove</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SubjectPassPercentage</servlet-name>
+  <servlet-class>Servlet.SubjectPassPercentageServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>SubjectPassPercentage</servlet-name>
+  <url-pattern>/login/subject/pass/Percentage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DepartmentPassPercentage</servlet-name>
+  <servlet-class>Servlet.DepartmentPassPercentageServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>DepartmentPassPercentage</servlet-name>
+  <url-pattern>/login/department/pass/Percentage</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+  <servlet-name>AllStudentsList</servlet-name>
+  <servlet-class>Servlet.AllDepartmentStudentsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AllStudentsList</servlet-name>
+  <url-pattern>/login/allStudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AllStaffsList</servlet-name>
+  <servlet-class>Servlet.AllDepartmentStaffsServlet</servlet-class>
+  </servlet>
+   
+  <servlet-mapping> 
+  <servlet-name>AllStaffsList</servlet-name>
+  <url-pattern>/login/allStaffs</url-pattern>
+  </servlet-mapping>
+    
+  <filter>
+  <filter-name>NameValidation</filter-name>
+  <filter-class>filter.NameFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+  <filter-name>NameValidation</filter-name>
+  <url-pattern>/login/student/add</url-pattern>
+  </filter-mapping>
+</web-app>
